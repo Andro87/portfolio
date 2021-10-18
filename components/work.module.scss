@@ -1,0 +1,130 @@
+@import "../styles/variables.scss";
+
+@keyframes info {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--Main);
+    box-shadow: 7px 7px 15px 0px var(--Main);
+    border-radius: 8px;
+}
+.work_img {
+    display: flex;
+    height: 300px;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.work_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--Bright);
+    background-color: var(--Background02);
+    padding: 20px;
+    @media screen and (min-width: $desktop) {
+        padding: 15px;
+    }
+    h5 {
+        font-family: "archi";
+        font-weight: 400;
+        color: var(--Bright);
+    }
+    p {
+        font-size: 0.8rem;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        font-family: "roboto";
+        font-weight: 500;
+        color: var(--Bright);
+        border: 1px solid var(--Bright);
+        padding: 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        text-align: center;
+        align-self: center;
+        transition: 0.4s all ease-in-out;
+
+        &:hover {
+            letter-spacing: 0.2rem;
+            border: none;
+            border-bottom: 1px solid var(--Bright);
+            border-top: 1px solid var(--Bright);
+            color: var(--Background02);
+            background-color: var(--Bright);
+        }
+        @media screen and (min-width: $desktop) {
+            width: 150px;
+        }
+    }
+}
+.background {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to right,
+            hsla(228, 39%, 83%, 0.5),
+            hsla(228, 39%, 83%, 0.5)
+        );
+    }
+}
+.btn_more {
+    border: none;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: var(--Bright);
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background-color: var(--Main);
+        svg {
+            path {
+                stroke: var(--Bright);
+            }
+        }
+    }
+
+    svg {
+        path {
+            stroke: var(--Main);
+        }
+    }
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--Main);
+    p {
+        color: var(--Background02);
+    }
+    animation: info 0.5s ease-in-out forwards;
+}

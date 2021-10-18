@@ -1,0 +1,88 @@
+@import "./variables.scss";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../public/fonts/RobotoSlab-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../public/fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "archi";
+    src: url("../public/fonts/ArchitectsDaughter-Regular.ttf");
+    font-weight: 400;
+}
+:root {
+    --A: hsla(235, 85%, 35%, 1);
+    --B: hsla(216, 59%, 38%, 1); /*quello del prot, back3*/
+    --C: hsla(223, 77%, 63%, 1); /*carino*/ /**/
+    --D: hsla(203, 94%, 75%, 1); /*questi sono tutti insieme*/
+    --E: hsla(200, 77%, 64%, 1); /**/
+    --F: hsla(228, 39%, 83%, 1); /**/
+    --G: hsla(213, 81%, 58%, 1); /**carino*/
+    --H: hsla(342, 93%, 40%, 1); /*carino*/
+    --I: hsla(336, 91%, 31%, 1);
+    --Main: hsla(259, 76%, 12%, 1);
+    --Secondary: hsla(212, 56%, 49%, 1); /*era 0.8 perche?*/
+    --Bright: hsla(352, 95%, 57%, 1);
+    --Background0: hsla(206, 63%, 74%, 1);
+    --Background01: hsla(182, 88%, 94%, 1);
+    --Background02: hsla(182, 100%, 99%, 1);
+    --Background1: hsla(199, 71%, 64%, 1);
+    --Background2: hsla(206, 71%, 59%, 1);
+}
+html {
+    font-size: 16px;
+}
+h1,
+h2,
+h4,
+h5 {
+    font-family: "roboto";
+    font-weight: 500;
+    color: var(--Main);
+}
+
+h1 {
+    @media screen and (min-width: $desktop) {
+        font-size: 4rem; /*64*/
+        line-height: 6rem; /*96px*/
+    }
+}
+
+h2 {
+    @media screen and (min-width: $desktop) {
+        font-size: 3rem; /*48*/
+        line-height: 4.5rem; /*72*/
+    }
+}
+h4 {
+    @media screen and (min-width: $desktop) {
+        font-size: 1.5rem; /*24rem*/
+        line-height: 2.25rem; /*36*/
+    }
+}
+h5 {
+    @media screen and (min-width: $desktop) {
+        font-size: 1rem; /*16*/
+        line-height: 1.5rem; /*24*/
+    }
+}
+p {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 1rem; /*16*/
+    line-height: 1.5rem; /*24*/
+}
+/*a {
+    text-decoration: none;
+    font-family: "roboto";
+    font-weight: 500;
+}*/

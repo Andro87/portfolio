@@ -1,0 +1,207 @@
+@import "./variables.scss";
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: translateY(5vh) scale(0) rotate(0);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-100vh) scale(4) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        var(--Background02),
+        var(--G),
+        var(--Background02)
+    );
+    background-size: 200% 200%;
+    animation: gradient 5s ease-in-out infinite;
+    padding: 30px;
+}
+.container_form {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+    @media screen and (min-width: $tablet) {
+        max-width: 600px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+        width: 80%;
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+}
+.contact_info {
+    margin-bottom: 40px;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        color: var(--Bright);
+        margin-bottom: 15px; /**/
+    }
+    p {
+        color: var(--Background02);
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    label {
+        font-family: "roboto";
+        font-weight: 500;
+        color: var(--Bright);
+        margin-bottom: 10px;
+    }
+
+    input {
+        border: none;
+        padding: 16px;
+        background-color: var(--Background02);
+        margin-bottom: 40px;
+        &:focus {
+            outline: max(3px, 0.1rem) solid var(--Bright);
+        }
+    }
+
+    ::placeholder {
+        font-family: "montserrat";
+        font-weight: 400;
+        color: var(--Main);
+        opacity: 0.8;
+        font-size: 0.8rem;
+    }
+}
+
+.message {
+    padding: 16px;
+    background-color: var(--Background02);
+    height: 100px; /**/
+    margin-bottom: 30px;
+    border: none;
+    &:focus {
+        outline: max(3px, 0.1rem) solid var(--Bright);
+    }
+}
+
+.contact_btn {
+    border: 1px solid transparent;
+    width: 200px;
+    background-color: var(--Bright);
+    color: var(--Background02);
+    font-family: "roboto";
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    padding: 15px 25px; /**/
+    transition: 0.4s all ease-in-out;
+
+    &:hover {
+        letter-spacing: 0.2rem;
+        border-bottom: 1px solid var(--Bright);
+        border-top: 1px solid var(--Bright);
+        color: var(--Bright);
+        background-color: var(--Background02);
+        cursor: pointer;
+    }
+}
+.cube_wrapper {
+    width: 100%;
+}
+
+.cube {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border: solid 2px var(--Bright);
+    transform-origin: center;
+    transform: translateY(5vh) scale(0) rotate(0);
+    animation: cube 8s ease-in forwards infinite;
+
+    &:nth-child(1) {
+        left: 0;
+        animation-delay: 1s;
+        border: solid 2px var(--Bright);
+        @media screen and (min-width: $desktop) {
+            animation-delay: 2s;
+        }
+    }
+    &:nth-child(2) {
+        left: 40%;
+        animation-delay: 4s;
+        border: solid 2px var(--Bright);
+        @media screen and (min-width: $desktop) {
+            animation-delay: 1s;
+            left: 20%;
+        }
+    }
+    &:nth-child(3) {
+        left: 75%;
+        animation-delay: 2s;
+        border: solid 2px var(--Bright);
+
+        @media screen and (min-width: $desktop) {
+            animation-delay: 3s;
+            left: 40%;
+        }
+    }
+    &:nth-child(4) {
+        display: none;
+        @media screen and (min-width: $desktop) {
+            display: initial;
+            left: 60%;
+            animation-delay: 2s;
+            border: solid 2px var(--Bright);
+        }
+    }
+    &:nth-child(5) {
+        display: none;
+        @media screen and (min-width: $desktop) {
+            display: initial;
+            left: 80%;
+            animation-delay: 1s;
+            border: solid 2px var(--Bright);
+        }
+    }
+
+    &:nth-child(6) {
+        display: none;
+        @media screen and (min-width: $desktop) {
+            display: initial;
+            left: 90%;
+            animation-delay: 3s;
+            border: solid 2px var(--Bright);
+        }
+    }
+}

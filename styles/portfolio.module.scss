@@ -1,0 +1,104 @@
+@import "./styles/variables.scss";
+
+.main_container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(
+        90deg,
+        var(--B),
+        var(--B) 4%,
+        var(--Background02) 4%,
+        var(--Background02) 96%,
+        var(--B) 96%
+    );
+    @media screen and (min-width: $tablet) {
+        background: linear-gradient(
+            180deg,
+            var(--B),
+            var(--B) 3.5%,
+            var(--Background02) 3.5%,
+            var(--Background02) 96.5%,
+            var(--B) 96.5%
+        );
+    }
+
+    @media screen and (min-width: $desktop) {
+        background: linear-gradient(
+            90deg,
+            var(--B),
+            var(--B) 10%,
+            var(--Background02) 10%,
+            var(--Background02) 90%,
+            var(--B) 90%
+        );
+    }
+}
+.main {
+    margin-top: 50px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 600px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 50%;
+    }
+    h1 {
+        color: var(--Bright);
+    }
+    a {
+        color: var(--Bright);
+        font-family: "roboto";
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+            color: var(--B);
+        }
+    }
+}
+
+.section_work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    @media screen and (min-width: $desktop) {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+.hr_line {
+    border: 1px solid var(--Bright);
+    height: 1px;
+    width: 100%;
+    background: var(--Bright);
+    margin-bottom: 80px;
+    opacity: 0.5;
+    @media screen and (min-width: $desktop) {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+}
+.work_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+
+    @media screen and (min-width: $tablet) {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 90px;
+    }
+}

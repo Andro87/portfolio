@@ -1,0 +1,213 @@
+@import "../styles/variables.scss";
+
+@keyframes menu {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hover {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.header {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    @media screen and (min-width: $desktop) {
+        padding: 50px;
+        right: initial;
+        left: 0;
+    }
+}
+.menu_open {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        hsla(228, 39%, 83%, 0.4),
+        hsla(228, 39%, 83%, 0.4)
+    );
+}
+.btn_wrap {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: relative;
+    z-index: 4;
+    align-items: center;
+    @media screen and (min-width: $desktop) {
+        height: 40px;
+        width: 40px;
+    }
+    &:hover {
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: all 0.5s ease-in-out;
+    }
+    p {
+        color: white;
+        position: relative;
+        z-index: 10;
+    }
+}
+.menu_btn {
+    border: none;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        var(--Bright),
+        var(--Background02)
+    ); /*come quello di  main*/
+    &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+            to right,
+            var(--Bright),
+            var(--Background02)
+        );
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to right,
+            var(--Bright),
+            var(--Background02)
+        );
+    }
+}
+.close_btn {
+    border: none;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    /*  z-index: 4;*/
+    @media screen and (min-width: $desktop) {
+        height: 40px;
+        width: 40px;
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: linear-gradient(
+            to right,
+            var(--Bright),
+            var(--Background02)
+        );
+        transform: rotate(45deg);
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: linear-gradient(
+            to right,
+            var(--Background02),
+            var(--Bright)
+        );
+        transform: rotate(-45deg);
+    }
+    &:hover {
+        border-radius: 50%;
+        background-color: var(--Background02);
+        filter: blur(8px);
+        transition: 0.4s all ease-in-out;
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    width: 80%;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    background-color: var(--Main);
+    transform: translateX(-100vw);
+    animation: menu 0.8s ease-in-out forwards;
+    @media screen and (min-width: $tablet) {
+        width: 50%;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 25%;
+    }
+}
+
+.link {
+    color: var(--Bright);
+    font-size: 2rem; /**/
+    line-height: 3rem;
+    font-family: "archi";
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 20px;
+    &:hover {
+        color: var(--Background02);
+        transition: 0.4s all ease-in-out;
+        &::after {
+            content: "";
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(
+                45deg,
+                var(--Bright),
+                var(--Background02)
+            );
+            animation: hover 0.5s linear forwards;
+        }
+    }
+}
+.link_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    svg {
+        margin-right: 20px; /*rivedere*/
+        path {
+            fill: var(--Bright);
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
