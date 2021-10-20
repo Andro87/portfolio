@@ -21,7 +21,7 @@ export default function Portfolio() {
             <main className={styles.main}>
                 <h1>Portfolio</h1>
                 <p>
-                    Here there is a collection of challenges I solved from
+                    Here there is a collection of challenges I solved from{" "}
                     <a href="#">Frontend Mentor</a>. Each of these projects has
                     helped me in learning something new and improve my skills,
                     knowledge and style. If you want to see more of them , visit
@@ -107,6 +107,18 @@ export default function Portfolio() {
                         project="CREATIVE SINGLE PAGE SITE"
                         language="HTML / SCSS / TSX"
                         info="This project has lots of overlapping elemts. A great challenge for layout skills. "
+                    />
+
+                    <Work
+                        image={
+                            <img
+                                src="/images/screenshots/insure-landing-page-ruddy.vercel.app_ (1).png"
+                                alt="creative single page"
+                            />
+                        }
+                        project="INSURE LANDING PAGE"
+                        language="HTML / SCSS / TSX"
+                        info="This project has been a good  test for layout skills. "
                     />
                 </div>
             </section>
