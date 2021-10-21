@@ -10,9 +10,10 @@ interface Props {
     readonly project: string;
     readonly language: string;
     readonly info: string;
+    readonly href: string;
 }
 const Work: React.FunctionComponent<Props> = props => {
-    const { image, project, language, info } = props;
+    const { image, project, language, info, href } = props;
     const [show, setShow] = useState(false);
     return (
         <div className={styles.work}>
@@ -27,7 +28,7 @@ const Work: React.FunctionComponent<Props> = props => {
             <div className={styles.work_info}>
                 <h5>{project}</h5>
                 <p>{language}</p>
-                <Link href="/">
+                <Link href={href}>
                     <a> SEE PROJECT</a>
                 </Link>
             </div>

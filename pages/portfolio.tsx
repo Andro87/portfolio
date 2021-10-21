@@ -22,13 +22,25 @@ export default function Portfolio() {
                 <h1>Portfolio</h1>
                 <p>
                     Here there is a collection of challenges I solved from{" "}
-                    <a href="#">Frontend Mentor</a>. Each of these projects has
-                    helped me in learning something new and improve my skills,
-                    knowledge and style. If you want to see more of them , visit
-                    my profiles on
-                    <a href="#"> Frontend Mentor </a>
-                    and
-                    <a href="#"> GitHub</a>.
+                    <Link href="https://www.frontendmentor.io/">
+                        <a> Frontend Mentor</a>
+                    </Link>
+                    .
+                </p>
+                <p>
+                    Each of these projects has helped me in learning something
+                    new and improve my skills, knowledge and style.
+                </p>
+                <p>
+                    If you want to see more of them , visit my profiles on{" "}
+                    <Link href="https://www.frontendmentor.io/profile/Andro87">
+                        <a>Frontend Mentor</a>
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="https://github.com/Andro87">
+                        <a> GitHub</a>
+                    </Link>
+                    .
                 </p>
             </main>
             <section className={styles.section_work}>
@@ -41,6 +53,7 @@ export default function Portfolio() {
                                 alt="room home page"
                             />
                         }
+                        href="https://git-room-homepage.vercel.app/"
                         project="ROOM HOMEPAGE"
                         language="HTML / SCSS / TSX"
                         info=" This project required to build a responsive
@@ -54,6 +67,7 @@ export default function Portfolio() {
                                 alt="loopstudios"
                             />
                         }
+                        href="https://loopstudios-landing-page-ten.vercel.app/"
                         project="LOOPSTUDIOS"
                         language="HTML / SCSS / TSX"
                         info="This project was a big test for layout
@@ -68,6 +82,7 @@ export default function Portfolio() {
                                 alt="typemaster"
                             />
                         }
+                        href="https://typemaster-pre-launch-landing-page-five.vercel.app/"
                         project="TYPEMASTER"
                         language="HTML / SCSS / TSX"
                         info="In  this project the layout shifts for each device , a  great test for css skills. "
@@ -80,6 +95,7 @@ export default function Portfolio() {
                                 alt="sunny side agency"
                             />
                         }
+                        href="https://sunnyside-agency-landing-page-green.vercel.app/"
                         project="SUNNYSIDE AGENCY"
                         language="HTML / SCSS / TSX"
                         info="This project was a test for layout skills and little details. "
@@ -92,6 +108,7 @@ export default function Portfolio() {
                                 alt="pod request"
                             />
                         }
+                        href="https://pod-request-access-landing-lage.vercel.app/"
                         project="POD REQUEST ACCESS"
                         language="HTML / SCSS / TSX"
                         info="This project was a nice test for responsiveness and also required a bit of JS for custum for validation."
@@ -104,6 +121,7 @@ export default function Portfolio() {
                                 alt="creative single page"
                             />
                         }
+                        href="https://creative-single-page-site-psi.vercel.app/"
                         project="CREATIVE SINGLE PAGE SITE"
                         language="HTML / SCSS / TSX"
                         info="This project has lots of overlapping elemts. A great challenge for layout skills. "
@@ -116,6 +134,7 @@ export default function Portfolio() {
                                 alt="creative single page"
                             />
                         }
+                        href="https://insure-landing-page-ruddy.vercel.app/"
                         project="INSURE LANDING PAGE"
                         language="HTML / SCSS / TSX"
                         info="This project has been a good  test for layout skills. "

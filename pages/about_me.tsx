@@ -23,16 +23,21 @@ export default function About() {
                     <a href="https://www.codecademy.com/">Codecademy</a>, keep
                     reading articles on the latest news , and test my knowledge
                     and skills solving challenges on{" "}
-                    <a href="#">Frontend Mentor</a>
-                    . <br /> I am currently searching for an opportunity to
-                    improve my knowledge and experience. I love to learn new
-                    skills and face new challenges.
-                    <br /> I love nature, so when not coding, you can find me
-                    out, whatever it is for a walk, cycling or simly visit new
-                    places. I like reading, art and food.
-                    <br /> I'd love you to check my work. <br />
-                    Thanks for your time.
+                    <a href="https://www.frontendmentor.io/">Frontend Mentor</a>
+                    .
                 </p>
+                <p>
+                    I am currently searching for an opportunity to improve my
+                    knowledge and experience. I love to learn new skills and
+                    face new challenges.
+                </p>
+                <p>
+                    I love nature, so when not coding, you can find me out,
+                    whatever it is for a walk, cycling or simly visit new
+                    places. I like reading, art and food.
+                </p>
+                <p> I'd love you to check my work. </p>
+                <p> Thanks for your time.</p>
             </main>
             <div className={styles.bottom}></div>
         </div>

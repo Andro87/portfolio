@@ -49,6 +49,7 @@
     }
     h1 {
         color: var(--Bright);
+        margin-bottom: 15px;
     }
     a {
         color: var(--Bright);
@@ -58,6 +59,9 @@
         &:hover {
             color: var(--B);
         }
+    }
+    p {
+        margin-bottom: 15px; //*****rivedere*/
     }
 }
 
