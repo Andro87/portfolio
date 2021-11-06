@@ -21,10 +21,11 @@ export default function Contact() {
 
                     <p>
                         I am currently looking for a work from home position,
-                        but I would be open to other oppprtunities that don't
-                        fit it. I work hard to solve problems and I like to pay
-                        attention to each details of a projects. So let's get in
-                        touch!
+                        but I would be open to talking about any other
+                        opportunities you may have. I work hard to solve
+                        problems, and I pay close attention to all of the small
+                        details. So please reach out, and let's start a
+                        conversation!
                     </p>
                 </div>
 
