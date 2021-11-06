@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/about_me.module.scss";
 import Header from "../components/header";
+import Link from "next/link";
 export default function About() {
     return (
         <div className={styles.main_container}>
@@ -17,27 +18,38 @@ export default function About() {
             <div className={styles.top}></div>
             <main className={styles.main}>
                 <h1>Hi...</h1>
+
                 <p>
-                    In 2020 I started this journey throught the webdevelopment
-                    industry and so I followed courses on{" "}
-                    <a href="https://www.codecademy.com/">Codecademy</a>, keep
-                    reading articles on the latest news , and test my knowledge
-                    and skills solving challenges on{" "}
-                    <a href="https://www.frontendmentor.io/">Frontend Mentor</a>
-                    .
+                    In the first half of 2020, I began my journey into the tech
+                    industry. I started my journey by completing Javascript,
+                    HTML and CSS courses on{" "}
+                    <Link href="https://www.codecademy.com/">
+                        <a>Codecademy</a>
+                    </Link>
+                    . In addition, I continue to enjoy and read articles on the
+                    latest news in the industry.
                 </p>
                 <p>
-                    I am currently searching for an opportunity to improve my
-                    knowledge and experience. I love to learn new skills and
-                    face new challenges.
+                    To further increase my knowledge, I started to solve
+                    challenges on{" "}
+                    <Link href="https://www.frontendmentor.io/">
+                        <a>Frontend Mentor</a>
+                    </Link>{" "}
+                    towards the end of 2020, focusing mainly on Typescript,
+                    React, and NextJS.
                 </p>
                 <p>
-                    I love nature, so when not coding, you can find me out,
-                    whatever it is for a walk, cycling or simly visit new
-                    places. I like reading, art and food.
+                    I have continued to improve and increase my knowledge in
+                    these areas throughout 2021. I love to learn new skills and
+                    face new challenges, and I am always looking for new
+                    opportunities to improve even further.
                 </p>
-                <p> I'd love you to check my work. </p>
-                <p> Thanks for your time.</p>
+                <p>
+                    I love nature, so when I'm not coding, you can find me out
+                    exploring, whether it's for a walk, cycling or, simply
+                    visiting new places. I like reading, art and food.
+                </p>
+                <p>I'd love it if you checked out my work.</p>
             </main>
             <div className={styles.bottom}></div>
         </div>

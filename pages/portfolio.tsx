@@ -20,23 +20,25 @@ export default function Portfolio() {
 
             <main className={styles.main}>
                 <h1>Portfolio</h1>
+
                 <p>
-                    Here there is a collection of challenges I solved from{" "}
+                    Below you will find a collection of challenges I have solved
+                    from{" "}
                     <Link href="https://www.frontendmentor.io/">
                         <a> Frontend Mentor</a>
                     </Link>
-                    .
+                    . Each of these challenges presented new problems for me to
+                    solve and increased my knowledge and understanding further.
+                    These challenges allowed me to explore Typescript, React and
+                    NextJS to the fullest and taught me how to use them
+                    effectively to solve the problem.
                 </p>
                 <p>
-                    Each of these projects has helped me in learning something
-                    new and improve my skills, knowledge and style.
-                </p>
-                <p>
-                    If you want to see more of them , visit my profiles on{" "}
+                    To see more of my work, please visit my profile on{" "}
                     <Link href="https://www.frontendmentor.io/profile/Andro87">
                         <a>Frontend Mentor</a>
                     </Link>{" "}
-                    and{" "}
+                    or{" "}
                     <Link href="https://github.com/Andro87">
                         <a> GitHub</a>
                     </Link>
