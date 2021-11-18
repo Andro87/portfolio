@@ -7,36 +7,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background: var(--F);
-    /*   background: linear-gradient(
-        90deg,
-        var(--B),
-        var(--B) 4%,
-        var(--Background02) 4%,
-        var(--Background02) 96%,
-        var(--B) 96%
-    );
-    @media screen and (min-width: $tablet) {
-        background: linear-gradient(
-            180deg,
-            var(--B),
-            var(--B) 3.5%,
-            var(--Background02) 3.5%,
-            var(--Background02) 96.5%,
-            var(--B) 96.5%
-        );
-    }
-
-    @media screen and (min-width: $desktop) {
-        background: linear-gradient(
-            90deg,
-            var(--B),
-            var(--B) 10%,
-            var(--Background02) 10%,
-            var(--Background02) 90%,
-            var(--B) 90%
-        );
-    }*/
+    background: var(--GreyBlue);
 }
 .main {
     margin-top: 50px;
@@ -57,11 +28,12 @@
         font-weight: 500;
         text-decoration: none;
         &:hover {
-            color: var(--B);
+            color: var(--RoyalBue);
         }
     }
     p {
         margin-bottom: 15px; //*****rivedere*/
+        color: var(--DarkBlue);
     }
 }
 

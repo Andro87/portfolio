@@ -24,8 +24,10 @@ export default function Contact() {
                         but I would be open to talking about any other
                         opportunities you may have. I work hard to solve
                         problems, and I pay close attention to all of the small
-                        details. So please reach out, and let's start a
-                        conversation!
+                        details.
+                        <p>
+                            So please reach out, and let's start a conversation!
+                        </p>
                     </p>
                 </div>
 

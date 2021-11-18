@@ -29,7 +29,7 @@
             bottom: 0;
             width: 100%;
             height: 4px;
-            background-color: var(--Main);
+            background-color: var(--DarkBlue);
         }
     }
 }
@@ -45,7 +45,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--Background02);
+    background-color: var(--WhiteBlue);
     padding: 20px;
     @media screen and (min-width: $desktop) {
         padding: 30px 15px;
@@ -59,6 +59,7 @@
         font-size: 0.7rem;
         margin-top: 5px;
         margin-bottom: 30px;
+        color: var(--DarkBlue);
     }
     a {
         text-decoration: none;
@@ -78,7 +79,7 @@
             border: none;
             border-bottom: 1px solid var(--Bright);
             border-top: 1px solid var(--Bright);
-            color: var(--Background02);
+            color: var(--WhiteBlue);
             background-color: var(--Bright);
         }
         @media screen and (min-width: $desktop) {
@@ -115,7 +116,7 @@
     background-color: var(--Bright);
     transition: all 0.4s ease-in-out;
     &:hover {
-        background-color: var(--Main);
+        background-color: var(--DarkBlue);
         svg {
             path {
                 stroke: var(--Bright);
@@ -125,7 +126,7 @@
 
     svg {
         path {
-            stroke: var(--Main);
+            stroke: var(--DarkBlue);
         }
     }
 }
@@ -135,9 +136,9 @@
     bottom: 0;
     padding: 20px;
     text-align: center;
-    background-color: var(--Main);
+    background-color: var(--DarkBlue);
     p {
-        color: var(--Background02);
+        color: var(--WhiteBlue);
     }
     animation: info 0.5s ease-in-out forwards;
 }

@@ -61,16 +61,12 @@
     justify-content: center;
     position: relative;
     padding: 30px;
-    background: linear-gradient(
-        135deg,
-        var(--Background02),
-        var(--Background2)
-    );
+    background: linear-gradient(135deg, var(--WhiteBlue), var(--SoftBlue));
 }
 
 .main {
     width: 100%;
-    background-color: var(--Background02);
+    background-color: var(--WhiteBlue);
     z-index: 3;
     padding: 20px;
     animation: container 1.5s ease-out forwards;
@@ -94,7 +90,6 @@
     h1 {
         font-family: "archi";
         color: var(--Bright);
-        text-shadow: none;
     }
 
     a {
@@ -103,11 +98,12 @@
         font-weight: 500;
         text-decoration: none;
         &:hover {
-            color: var(--B);
+            color: var(--RoyalBlue);
         }
     }
     p {
         margin-bottom: 15px; //*****rivedere*/
+        color: var(--DarkBlue);
     }
 }
 .top {
@@ -118,7 +114,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: var(--B);
+    background-color: var(--RoyalBlue);
     animation: upper_mobile 1.5s ease-in-out forwards;
     @media screen and (min-width: $desktop) {
         height: 50vh;

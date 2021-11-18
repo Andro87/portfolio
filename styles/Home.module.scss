@@ -33,8 +33,8 @@
     padding: 30px;
     background: linear-gradient(
         135deg,
-        var(--Background02),
-        /*   var(--Background02),*/ var(--F)
+        var(--WhiteBlue),
+        /*   var(--Background02),*/ var(--GreyBlue)
     );
 }
 
@@ -42,13 +42,12 @@
     position: relative;
     text-align: center;
     z-index: 4;
-
     @media screen and (min-width: $desktop) {
         text-align: initial;
         max-width: 700px;
     }
     h1 {
-        color: var(--Main);
+        color: var(--DarkBlue);
     }
     span {
         color: var(--Bright);
@@ -68,7 +67,7 @@
 
 .link_me {
     text-decoration: none;
-    color: var(--Main);
+    color: var(--DarkBlue);
     font-family: "archi";
     font-weight: 400;
     font-size: 4rem; /*64*/
@@ -77,7 +76,7 @@
     &:before {
         content: "Me";
         position: absolute;
-        color: var(--Main);
+        color: var(--DarkBlue);
         z-index: -1;
         top: 0;
         left: 0;
@@ -94,7 +93,7 @@
     }
 
     &:hover {
-        color: var(--Main);
+        color: var(--DarkBlue);
     }
     &:hover:before {
         top: -10px;
@@ -108,7 +107,7 @@
 }
 
 .section_container {
-    background-color: var(--B);
+    background-color: var(--RoyalBlue);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -136,22 +135,22 @@
     opacity: 0;
     transform: translateY(5vh);
     &:nth-child(1) {
-        background-color: var(--A);
+        background-color: var(--Blue);
         left: -5%;
         animation-delay: 1s;
     }
     &:nth-child(2) {
-        background-color: var(--D);
+        background-color: var(--Celeste);
         left: 15%;
         animation-delay: 3s;
     }
     &:nth-child(3) {
-        background: var(--Main);
+        background: var(--DarkBlue);
         left: 35%;
         animation-delay: 5s;
     }
     &:nth-child(4) {
-        background-color: var(--C);
+        background-color: var(--LightBlue);
         left: 55%;
         animation-delay: 2s;
     }
@@ -161,7 +160,7 @@
         animation-delay: 4s;
     }
     &:nth-child(6) {
-        background-color: var(--F);
+        background-color: var(--GreyBlue);
         left: 95%;
         animation-delay: 6s;
     }

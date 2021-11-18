@@ -141,7 +141,7 @@
     }
     &:hover {
         border-radius: 50%;
-        background-color: var(--Background02);
+        background-color: var(--WhiteBlue);
         filter: blur(8px);
         transition: 0.4s all ease-in-out;
     }
@@ -157,7 +157,7 @@
     top: 0;
     left: 0;
     padding: 50px;
-    background-color: var(--Main);
+    background-color: var(--DarkBlue);
     transform: translateX(-100vw);
 
     animation: menu 0.8s ease-in-out forwards;
@@ -179,7 +179,7 @@
     width: fit-content;
     margin-bottom: 20px;
     &:hover {
-        color: var(--Background02);
+        color: var(--WhiteBlue);
         transition: 0.4s all ease-in-out;
         &::after {
             content: "";
@@ -187,11 +187,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            background: linear-gradient(
-                45deg,
-                var(--Bright),
-                var(--Background02)
-            );
+            background: linear-gradient(45deg, var(--Bright), var(--WhiteBlue));
             animation: hover 0.5s linear forwards;
         }
     }
