@@ -8,9 +8,9 @@
 
 ## Overview
 
-![My Portfolio Website](./public/asssets/portfolio_screenshot.png)
+![My Portfolio Website](./public/assets/portfolio_screenshot.png)
 
--   Live Site URL: [Live site URL ](https://bmi-calculator-six-brown.vercel.app/)
+-   Live Site URL: [Live site URL ](https://portfolio-liard-chi-79.vercel.app/)
 
     This is a simple portfolio website I have personally designed to show my abilities and my works.
 
