@@ -13,6 +13,10 @@ import { CloseBtn } from "./CloseBtn/CloseBtn";
 export const Header = () => {
     const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false);
 
+    const handleMenuMobile = () => {
+        setIsMenuMobileOpen(false);
+    };
+
     return (
         <header className={styles.header}>
             <div className={styles.container}>
@@ -43,17 +47,29 @@ export const Header = () => {
                 >
                     <ul className={styles.list}>
                         <li className={styles.list_item}>
-                            <Link href="#about" className={styles.list_link}>
+                            <Link
+                                href="#about"
+                                className={styles.list_link}
+                                onClick={handleMenuMobile}
+                            >
                                 about
                             </Link>
                         </li>
                         <li className={styles.list_item}>
-                            <Link href="#works" className={styles.list_link}>
+                            <Link
+                                href="#works"
+                                className={styles.list_link}
+                                onClick={handleMenuMobile}
+                            >
                                 works
                             </Link>
                         </li>
                         <li className={styles.list_item}>
-                            <Link href="#contact" className={styles.list_link}>
+                            <Link
+                                href="#contact"
+                                className={styles.list_link}
+                                onClick={handleMenuMobile}
+                            >
                                 contact
                             </Link>
                         </li>
