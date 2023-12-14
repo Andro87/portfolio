@@ -1,0 +1,26 @@
+@use "styles/helpers" as *;
+
+.section_works {
+    margin-block: 50px;
+    @include breakpoint($large) {
+        margin-block: 100px;
+    }
+}
+.container {
+    @include container($large);
+}
+
+.works_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    @include breakpoint($medium) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px;
+        gap: 0;
+    }
+    @include breakpoint($large) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+    }
+}

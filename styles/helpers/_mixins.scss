@@ -1,0 +1,18 @@
+@mixin breakpoint($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin container($size) {
+    width: 90%;
+    margin-inline: auto;
+
+    @media screen and (min-width: $size) {
+        max-width: 68rem;
+    }
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in;
+}

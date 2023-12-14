@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    z-index: 10000000000;
+}
+
+.top_line,
+.middle_line,
+.bottom_line {
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.middle_line {
+    width: 50%;
+    align-self: center;
+}

@@ -1,0 +1,47 @@
+@use "styles/helpers" as *;
+
+.section_about {
+    margin-top: 50px;
+    overflow: hidden;
+    @include breakpoint($large) {
+        margin-top: 100px;
+    }
+}
+.container {
+    @include breakpoint($large) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include container($large);
+}
+.about_img {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.about_info {
+    margin: auto;
+    margin-top: 50px;
+    @include breakpoint($large) {
+        margin: auto;
+    }
+}
+.about_wrap {
+    text-align: center;
+    width: 90%;
+    margin-inline: auto;
+    @include breakpoint($large) {
+        max-width: 32rem;
+    }
+    a {
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: var(--primary-color);
+    }
+}

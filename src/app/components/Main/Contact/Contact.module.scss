@@ -1,0 +1,11 @@
+@use "styles/helpers" as *;
+
+.section_contact {
+}
+
+.container {
+    @include container($large);
+    p {
+        text-align: center;
+    }
+}

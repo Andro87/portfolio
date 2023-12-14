@@ -1,0 +1,39 @@
+[
+    {
+        "project": "Rock, Paper, Scissors game",
+        "screenshot": "/assets/screenshots/rock-paper-scissors-game-screenshot.png",
+        "demo": "https://rock-paper-scissors-game-blush.vercel.app/",
+        "code": "https://github.com/Andro87/rock-paper-scissors-game.git"
+    },
+
+    {
+        "project": "single page design portfolio",
+        "screenshot": "/assets/screenshots/single-page-design-portfolio-screenshot.png",
+        "demo": "https://single-page-design-portfolio-tan.vercel.app/",
+        "code": "https://github.com/Andro87/single-page-design-portfolio.git"
+    },
+    {
+        "project": "GitHub user search app",
+        "screenshot": "/assets/screenshots/gitHub-user-app-screenshot.png",
+        "demo": "https://github-user-search-app-five.vercel.app/",
+        "code": "https://github.com/Andro87/github-user-search-app.git"
+    },
+    {
+        "project": "E-commerce Product Page",
+        "screenshot": "/assets/screenshots/e-commerce-page-screenshot.png",
+        "demo": "https://ecommerce-product-page-gilt.vercel.app/",
+        "code": "https://github.com/Andro87/ecommerce-product-page.git"
+    },
+    {
+        "project": "Photosnap multipage website",
+        "screenshot": "/assets/screenshots/photosnap-project-screenshot.png",
+        "demo": "https://photosnap-multi-page-website-project.vercel.app/",
+        "code": "https://github.com/Andro87/photosnap-multi-page-website-project.git"
+    },
+    {
+        "project": "Galleria slideshow",
+        "screenshot": "assets/screenshots/galleria-slideshow-site-screenshot.png",
+        "demo": "https://galleria-slideshow-site-five.vercel.app/",
+        "code": "https://github.com/Andro87/galleria-slideshow-site.git"
+    }
+]

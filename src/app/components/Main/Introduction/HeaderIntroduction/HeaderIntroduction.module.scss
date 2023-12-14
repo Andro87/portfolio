@@ -1,0 +1,15 @@
+@use "styles/helpers" as *;
+
+.header {
+    margin-bottom: 50px;
+    @include breakpoint($large) {
+        margin-bottom: 80px;
+    }
+
+    &_name {
+        color: var(--accent-color);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        vertical-align: bottom;
+    }
+}
