@@ -61,7 +61,7 @@ export const Header = () => {
                                 className={styles.list_link}
                                 onClick={handleMenuMobile}
                             >
-                                works
+                                my work
                             </Link>
                         </li>
                         <li className={styles.list_item}>

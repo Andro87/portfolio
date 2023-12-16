@@ -34,7 +34,7 @@ export const Form = () => {
                 "portfolio_service",
                 "template_op7941n",
                 templateParam,
-                "DQSjs40WoC4ZaHx_3"
+                "t_rHExEgbr92mH2-d"
             )
             .then(() => {
                 console.log("Email sent successfully");
@@ -81,11 +81,7 @@ export const Form = () => {
                     id="message"
                     rows={4}
                     {...register("message", {
-                        required: "This is required!",
-                        minLength: {
-                            value: 50,
-                            message: "Min length is 50"
-                        }
+                        required: "This is required!"
                     })}
                 ></textarea>
                 {errors.message && <p>{errors.message.message}</p>}

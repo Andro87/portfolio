@@ -27,7 +27,7 @@ export const Introduction = () => {
                     variants={btnAnimation}
                 >
                     <Link href="#works" className={styles.btn_intro}>
-                        see my works
+                        see my work
                     </Link>
                 </motion.div>
             </motion.div>

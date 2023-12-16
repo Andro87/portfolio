@@ -5,13 +5,14 @@ import "styles/style.scss";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
+export const viewport = {
+    width: "device-width",
+    initialScale: 1
+};
+
 export const metadata: Metadata = {
     title: "My website portfolio",
-    description: "My portfolio",
-    viewport: {
-        width: "device-width",
-        initialScale: 1
-    }
+    description: "My portfolio"
 };
 
 export default function RootLayout({

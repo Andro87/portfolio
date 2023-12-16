@@ -26,7 +26,7 @@ export const Works = () => {
             id="works"
         >
             <div className={styles.container}>
-                <h2>works</h2>
+                <h2> my work</h2>
                 <motion.div
                     className={styles.works_container}
                     variants={allProjectsAnimation}
